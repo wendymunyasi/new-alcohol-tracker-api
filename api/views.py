@@ -55,7 +55,18 @@ def Recipients(request):
 
     return Response({'message': 'Bad Request'}, status=status.HTTP_400_BAD_REQUEST)
 
+class NewsletterRecipientsListView(ListView):
+    
+    model = NewsLetterRecipient
+    template_name = 'recipients.html'
+    context_object_name = 'recipients'
+    ordering = ['-date_registered']
+    paginate_by = 4
+    
 
-
-
-# def Recipients()
+class NewsletterRecipientCreateView(CreateView):
+    
+    model = NewsLetterRecipient
+    fields = ['email']
+    template_name = 'newsletterrecipient_form.html'
+    
