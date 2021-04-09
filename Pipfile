@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-heroku = "*"
+dj-database-url = "*"
+django-cors-headers = "*"
+gunicorn = "*"
+python-decouple = "*"
+whitenoise = "*"
+django-bootstrap4 = "*"
+psycopg2 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
