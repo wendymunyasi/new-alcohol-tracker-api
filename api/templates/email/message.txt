@@ -1,0 +1,9 @@
+Hello {{email}},
+
+Welcome to the <strong>Alcohol Tracker</strong> newsletter. We will inform you once our app is available.
+
+Thank you for being patient.
+
+Kind regards,
+
+CEO Alcohol Tracker.
